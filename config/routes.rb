@@ -4,12 +4,4 @@ Rails.application.routes.draw do
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
-
-  constraints subdomain: 'api' do
-    scope module: 'api' do
-      namespace :v1 do
-        resources :users
-      end
-    end
-  end
 end
